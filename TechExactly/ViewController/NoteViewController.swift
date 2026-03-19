@@ -175,7 +175,6 @@ class NoteViewController: UIViewController {
         noteTitle.text = viewModel?.note?.title
         let attrText = viewModel?.note?.content.attributedStr ?? NSAttributedString()
         let currentText = NSMutableAttributedString(attributedString: attrText)
-        currentText.addAttribute(.font, value: checklistFont, range: NSRange(location: 0, length: currentText.length))
         noteTextView.attributedText = currentText
     }
 }
